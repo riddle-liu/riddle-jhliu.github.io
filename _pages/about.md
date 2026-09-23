@@ -18,7 +18,7 @@ He has been focusing on research about computational fluid-structure interaction
 Please feel free to contact him if any queries.
 
 <!-- /Русский -->
-<p align="right"> (Recent update on 2026/7/26) </p>
+<p align="right"> (Recent update on 2026/9/16) </p>
 
 ## Education
 * **Ph.D** in Mechanics of Solids, School of Engineering, Brown University, expected (Supervisor: [Prof. Yuri Bazilevs](https://scholar.google.com/citations?user=U_FvD34AAAAJ&hl=en)) 
