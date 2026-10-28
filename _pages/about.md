@@ -20,21 +20,33 @@ Please feel free to contact him if you have any queries.
 <!-- /Русский -->
 <p align="right"> (Recent update on 2026/9/16) </p>
 
+## Recent Publications
+{% assign recent_pubs = site.publications | sort: "date" | reverse %}
+{% for p in recent_pubs limit: 3 %}
+* [{{ p.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}]({{ p.url }}), *{{ p.venue }}*, {{ p.date | date: "%Y" }}
+{% endfor %}
+
+[All publications &rarr;](/publications/)
+
+## Recent Talks
+{% assign recent_talks = site.talks | sort: "date" | reverse %}
+{% for t in recent_talks limit: 2 %}
+* [{{ t.title }}]({{ t.url }}) ({{ t.type }}), {{ t.location }}, {{ t.date | date: "%Y" }}
+{% endfor %}
+
+[All talks &rarr;](/talks/)
+
 ## Education
-* **Ph.D.** in Mechanics of Solids, School of Engineering, Brown University, expected (Supervisor: [Prof. Yuri Bazilevs](https://scholar.google.com/citations?user=U_FvD34AAAAJ&hl=en)) 
-* **Master's Degree** in Mechanical Engineering (Computational Fluid Mechanics), College of Engineering, Peking University, 2024
-(Supervisor: [Prof. Moubin Liu](https://scholar.google.com/citations?user=guclLlYAAAAJ&hl=en)) 
-* **Bachelor's Degree** in Engineering Mechanics, Department of Engineering Mechanics, Dalian University of Technology, 2021 (Major)
-(Supervisor: [Prof. Yue Mei](https://scholar.google.com/citations?user=aMNdUkUAAAAJ&hl=en), [Prof. Shunying Ji](https://www.researchgate.net/profile/Shunying-Ji)) 
-* **Bachelor's Degree** in Business Administration (Project Management), School of Economics and Management, Dalian University of Technology, 2021 (Minor)
-(Supervisor: Prof. Miao Yu)
+* **Ph.D.** in Mechanics of Solids, Brown University, expected 2028
+* **Master's Degree** in Mechanical Engineering, Peking University, 2024
+* **Bachelor's Degree** in Engineering Mechanics (Major) and Business Administration (Minor), Dalian University of Technology, 2021
 
-
+Supervisors and research history are listed in the [CV](/cv/).
 
 ## Contact
-Room 260, 2001 Grand Ave, Nashville, TN 37212
+Room 260, 2001 Grand Ave, Nashville, TN 37212 &middot; [View on Google Maps](https://www.google.com/maps/place/2001+Grand+Ave,+Nashville,+TN+37212)
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2168.8500778000093!2d-86.79807823032549!3d36.14678789827753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886466972597ef41%3A0xead5009322beb3b5!2s2001%20Grand%20Ave%2C%20Nashville%2C%20TN%2037212!5e1!3m2!1sen!2sus!4v1785775163242!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2168.8500778000093!2d-86.79807823032549!3d36.14678789827753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886466972597ef41%3A0xead5009322beb3b5!2s2001%20Grand%20Ave%2C%20Nashville%2C%20TN%2037212!5e1!3m2!1sen!2sus!4v1785775163242!5m2!1sen!2sus" title="Map of 2001 Grand Ave, Nashville" style="border:0; width:100%; height:240px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 <!-- Besides Meeting Room 250, Brown University Engineering Research Center, 345 Brook St
 Providence, Rhode Island 02912
