@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Mr. Jiahao Liu is a Ph.D. candidate at Brown University (Supervisor: [Prof. Yuri Bazilevs](https://scholar.google.com/citations?user=U_FvD34AAAAJ&hl=en)) majoring in Mechanics of Solids.
+Jiahao Liu is a Ph.D. candidate at Brown University (Advisor: [Prof. Yuri Bazilevs](https://scholar.google.com/citations?user=U_FvD34AAAAJ&hl=en)) majoring in Mechanics of Solids, and is currently visiting Vanderbilt University.
 <!-- postgraduate student in Peking University (Supervisor: [Prof. Moubin Liu](https://scholar.google.com/citations?user=guclLlYAAAAJ&hl=en)) and major in engneering mechanics.  -->
 He has been focusing on research about computational fluid-structure interaction, mesh-based methods, meshless methods and high performance computing. He is working on Updated Lagrangian IGA for thin shell and stability of Triply Periodic Minimal Surface Structures. 
 <!-- Also, he is working on reduced quadrature; RKPM; jax-based computing as well. -->
