@@ -18,7 +18,7 @@ He has been focusing on research about computational fluid-structure interaction
 Please feel free to contact him if you have any queries.
 
 <!-- /Русский -->
-<p align="right"> (Recent update on 2026/9/16) </p>
+<p align="right"> (Recent update on 2026/10/16) </p>
 
 ## Recent Publications
 {% assign recent_pubs = site.publications | sort: "date" | reverse %}
