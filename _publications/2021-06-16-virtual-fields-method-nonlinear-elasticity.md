@@ -1,7 +1,9 @@
 ---
 title: "General Finite-Element Framework of the Virtual Fields Method in Nonlinear Elasticity"
 collection: publications
-permalink: /publication/2021-6-16-paper-title-number-1
+permalink: /publication/2021-virtual-fields-method-nonlinear-elasticity
+redirect_from:
+  - /publication/2021-6-16-paper-title-number-1
 excerpt: ' '
 date: 2021-6-16
 venue: 'Journal of Elasticity'

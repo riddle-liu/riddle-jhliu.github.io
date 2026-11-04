@@ -1,7 +1,9 @@
 ---
 title: "Numerical modeling of the damage mechanism of concrete-soil multilayered medium subjected to underground explosion using the GPU-accelerated SPH"
 collection: publications
-permalink: /publication/2023-3-16-paper-title-number-2
+permalink: /publication/2023-gpu-sph-underground-explosion
+redirect_from:
+  - /publication/2023-3-16-paper-title-number-2
 date: 2023-3-16
 excerpt: ' '
 venue: 'Engineering Analysis with Boundary Elements'

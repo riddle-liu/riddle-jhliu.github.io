@@ -1,7 +1,9 @@
 ---
 title: "A massive MPI parallel adaptive resolution SPH method for large-scale multiphase flow simulations."
 collection: publications
-permalink: /publication/2026-3-10-paper-title-number-7
+permalink: /publication/2026-mpi-adaptive-resolution-sph
+redirect_from:
+  - /publication/2026-3-10-paper-title-number-7
 date: 2026-3-10
 excerpt: ' '
 venue: 'Computer Physics Communication'

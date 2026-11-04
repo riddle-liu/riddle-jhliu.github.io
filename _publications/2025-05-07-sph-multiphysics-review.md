@@ -1,7 +1,9 @@
 ---
 title: "Recent progress in multi-physics simulation based on the smoothed particle hydrodynamics"
 collection: publications
-permalink: /publication/2025-5-7-paper-title-number-6
+permalink: /publication/2025-sph-multiphysics-review
+redirect_from:
+  - /publication/2025-5-7-paper-title-number-6
 date: 2025-5-7
 excerpt: ' '
 venue: 'Advances in Mechanics'
