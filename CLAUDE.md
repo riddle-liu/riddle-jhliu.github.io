@@ -33,7 +33,7 @@ Standard Jekyll structure with content driven by **collections** defined in `_co
 
 ### Content entry format
 
-Each collection item is a Markdown file with YAML front matter. Filenames follow `YYYY-MM-DD-slug.md` and the permalink is typically set explicitly in front matter (e.g. `permalink: /talks/2023-08-21-talk-6`, `permalink: /publication/2026-3-10-paper-title-number-7`). Look at existing files in `_publications/` or `_talks/` as the template when adding new ones — required front matter fields differ per collection (e.g. talks need `type`, `venue`, `location`, `date`; publications need `citation`, `paperurl`, `excerpt`).
+Each collection item is a Markdown file with YAML front matter. Filenames follow `YYYY-MM-DD-slug.md`; the permalink is set explicitly in front matter as `/<collection>/<YYYY>-<slug>`, with `redirect_from` listing any older URL (e.g. `permalink: /talks/2023-cccm`, `permalink: /publication/2026-mpi-adaptive-resolution-sph`). Look at existing files in `_publications/` or `_talks/` as the template when adding new ones — required front matter fields differ per collection (e.g. talks need `type`, `venue`, `location`, `date`; publications need `citation`, `paperurl`, `excerpt`).
 
 ### Markdown generators
 
@@ -41,7 +41,7 @@ Each collection item is a Markdown file with YAML front matter. Filenames follow
 
 ### Talk map
 
-`talkmap/` + `talkmap.py`/`talkmap.ipynb` generate `talkmap/org-locations.js` (a Leaflet map of talk locations) from the `_talks/` collection's `location` front matter; rendered via `_pages/talkmap.html` when `talkmap_link: true` in `_config.yml`.
+`talkmap.py` (run from the repo root, needs `geopy`) geocodes the `location` front matter of each file in `_talks/` and rewrites `talkmap/org-locations.js`. The map page `talkmap/map.html` and its self-hosted Leaflet 1.9.4 + Leaflet.markercluster 1.5.3 files in `talkmap/leaflet_dist/` are maintained by hand. The map is embedded on the talks page and `_pages/talkmap.html` when `talkmap_link: true` in `_config.yml`.
 
 ## Notes
 
