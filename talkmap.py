@@ -1,47 +1,36 @@
-
-
-# # Leaflet cluster map of talk locations
+# Regenerate talkmap/org-locations.js from the `location` field of each talk.
 #
-# (c) 2016-2017 R. Stuart Geiger, released under the MIT license
+# Run from the repository root:   python talkmap.py
+# Requires: geopy   (pip install geopy)
 #
-# Run this from the _talks/ directory, which contains .md files of all your talks. 
-# This scrapes the location YAML field from each .md file, geolocates it with
-# geopy/Nominatim, and uses the getorg library to output data, HTML,
-# and Javascript for a standalone cluster map.
-#
-# Requires: glob, getorg, geopy
+# Only the data file is rewritten. The map page itself (talkmap/map.html) and
+# its self-hosted Leaflet files are maintained by hand.
 
 import glob
-import getorg
-from geopy import Nominatim
+import json
+import re
+import time
 
-g = glob.glob("*.md")
+from geopy.geocoders import Nominatim
 
+geocoder = Nominatim(user_agent="academic-site-talkmap")
+points = {}
 
-geocoder = Nominatim()
-location_dict = {}
-location = ""
-permalink = ""
-title = ""
+for path in sorted(glob.glob("_talks/*.md")):
+    with open(path, encoding="utf-8") as f:
+        match = re.search(r'^location:\s*"([^"]+)"', f.read(), re.M)
+    if not match or match.group(1) in points:
+        continue
+    place = match.group(1)
+    result = geocoder.geocode(place)
+    time.sleep(1)  # Nominatim allows at most one request per second
+    if result is None:
+        print(f"Could not geocode: {place} ({path})")
+        continue
+    points[place] = [place, result.latitude, result.longitude]
+    print(place, "->", result.latitude, result.longitude)
 
+with open("talkmap/org-locations.js", "w", encoding="utf-8") as f:
+    f.write("var addressPoints = " + json.dumps(list(points.values()), indent=2, ensure_ascii=False) + ";\n")
 
-for file in g:
-    with open(file, 'r') as f:
-        lines = f.read()
-        if lines.find('location: "') > 1:
-            loc_start = lines.find('location: "') + 11
-            lines_trim = lines[loc_start:]
-            loc_end = lines_trim.find('"')
-            location = lines_trim[:loc_end]
-                            
-           
-        location_dict[location] = geocoder.geocode(location)
-        print(location, "\n", location_dict[location])
-
-
-m = getorg.orgmap.create_map_obj()
-getorg.orgmap.output_html_cluster_map(location_dict, folder_name="../talkmap", hashed_usernames=False)
-
-
-
-
+print(f"Wrote {len(points)} locations to talkmap/org-locations.js")

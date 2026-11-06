@@ -1,7 +1,9 @@
 ---
 title: "A Novel Fast and Body-Fitted Particle Generation Technique for Large-Scale SPH Simulations"
 collection: publications
-permalink: /publication/2024-2-18-paper-title-number-5
+permalink: /publication/2024-body-fitted-particle-generation
+redirect_from:
+  - /publication/2024-2-18-paper-title-number-5
 date: 2024-2-18
 excerpt: ' '
 venue: 'International Journal of Computational Methods'

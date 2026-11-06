@@ -317,3 +317,9 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+/* Embedded maps use fixed pixel widths; keep them inside the screen on phones */
+
+iframe {
+  max-width: 100%;
+}

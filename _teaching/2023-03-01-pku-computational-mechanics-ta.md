@@ -2,7 +2,9 @@
 title: "Teaching assistant experience 1 : Computational Mechanics 08611510"
 collection: teaching
 type: "Graduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/2023-pku-computational-mechanics-ta
+redirect_from:
+  - /teaching/2014-spring-teaching-1
 venue: "Peking University, College of Engneering"
 date: 2023-03-01
 location: "Beijing, China"

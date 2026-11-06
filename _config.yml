@@ -13,7 +13,7 @@ name                     : &name "Jiahao Liu"
 description              : &description "PhD candidate in Mechanics of Solids at Brown University, working on computational fluid-structure interaction, isogeometric analysis, and high-performance computing."
 url                      : https://riddle-jhliu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "riddle-jhliu/riddle-jhliu.github.io"
+repository               : "riddle-liu/riddle-jhliu.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -130,6 +130,13 @@ exclude:
   - .jekyll-assets-cache
   - .sass-cache
   - CHANGELOG
+  - CLAUDE.md
+  - CONTRIBUTING.md
+  - Gemfile.lock
+  - markdown_generator
+  - talkmap.py
+  - talkmap.ipynb
+  - "*.ipynb"
   - Capfile
   - Gemfile
   - Gruntfile.js

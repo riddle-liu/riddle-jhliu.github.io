@@ -1,7 +1,9 @@
 ---
 title: "MPI Massive Parallelization of Smoothed Particle Hydrodynamics for Simulation of Impact and Explosion Problems"
 collection: publications
-permalink: /publication/2023-8-31-paper-title-number-3
+permalink: /publication/2023-mpi-sph-impact-explosion
+redirect_from:
+  - /publication/2023-8-31-paper-title-number-3
 date: 2023-8-31
 excerpt: ' '
 venue: 'The International Conference on Computational & Experimental Engineering and Sciences'

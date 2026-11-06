@@ -1,7 +1,9 @@
 ---
 title: "A massive MPI parallel framework of smoothed particle hydrodynamics with optimized memory management for extreme mechanics problems."
 collection: publications
-permalink: /publication/2023-10-9-paper-title-number-4
+permalink: /publication/2023-mpi-sph-memory-management
+redirect_from:
+  - /publication/2023-10-9-paper-title-number-4
 date: 2023-10-9
 excerpt: ' '
 venue: 'Computer Physics Communication'
